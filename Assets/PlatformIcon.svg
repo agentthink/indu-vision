@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <title>数字孪生工业自动化控制平台</title>
+  <rect x="8" y="8" width="240" height="240" rx="54" fill="#2563EB"/>
+  <path d="M128 48 202 91 128 134 54 91Z" fill="#38BDF8"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M128 48 202 91V167L128 210 54 167V91Z"/>
+    <path d="M54 91 128 134 202 91M128 134V210"/>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><Nullable>enable</Nullable><ImplicitUsings>enable</ImplicitUsings></PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="OpenCvSharp4" Version="4.13.0.20260627" />
+    <PackageReference Include="OpenCvSharp4.official.runtime.linux-x64" Version="4.13.0.20260627" Condition="$([MSBuild]::IsOSPlatform('Linux'))" />
+    <PackageReference Include="OpenCvSharp4.runtime.win" Version="4.13.0.20260627" Condition="$([MSBuild]::IsOSPlatform('Windows'))" />
+    <Compile Include="../Recognition/*.cs" />
+    <Compile Include="../Models/AppModels.cs" />
+    <Compile Include="../Cameras/CameraDeviceInfo.cs" />
+    <Compile Include="../Cameras/CameraCaptureFactory.cs" />
+    <Compile Include="../Cameras/DirectShowCameraEnumerator.cs" />
+    <Compile Include="../Services/ImageProcessor.cs" />
+  <Compile Include="../Services/ImageAlgorithms.cs" />
+    <Compile Include="../Services/ShutdownCoordinator.cs" />
+  </ItemGroup>
+</Project>

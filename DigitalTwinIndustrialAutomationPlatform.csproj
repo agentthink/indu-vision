@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>DigitalTwinIndustrialAutomationPlatform</AssemblyName>
+    <RootNamespace>DigitalTwinIndustrialAutomationPlatform</RootNamespace>
+    <AssemblyTitle>数字孪生工业自动化控制平台</AssemblyTitle>
+    <Product>数字孪生工业自动化控制平台</Product>
+    <Version>1.0.1</Version>
+    <Description>面向模块扩展的工业自动化应用平台，当前接入识别与分拣系统模块。</Description>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <PlatformTarget>x64</PlatformTarget>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <ApplicationIcon>Assets\PlatformIcon.ico</ApplicationIcon>
+    <DefaultItemExcludes>$(DefaultItemExcludes);artifacts/**;publish/**</DefaultItemExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="tests/**/*.cs" />
+    <Resource Include="Assets\PlatformIcon.ico" />
+    <Resource Include="Assets\PlatformIcon.png" />
+    <PackageReference Include="System.Management" Version="10.0.0" />
+    <PackageReference Include="OpenCvSharp4" Version="4.13.0.20260627" />
+    <PackageReference Include="OpenCvSharp4.runtime.win" Version="4.13.0.20260627" />
+    <PackageReference Include="OpenCvSharp4.WpfExtensions" Version="4.13.0.20260627" />
+  </ItemGroup>
+</Project>
